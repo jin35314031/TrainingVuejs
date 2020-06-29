@@ -10,7 +10,13 @@ new Vue({
             age:'28'
         },
         colors:['Red','Green','Blue'],
-        toggle:false
-
+        toggle:false,
+        now:''
+    },
+    methods:{
+        onclick: function(){
+            //alert('onclick');
+            this.now = new Date().toLocaleString();
+        }
     }
 })
