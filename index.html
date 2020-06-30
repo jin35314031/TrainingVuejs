@@ -6,43 +6,13 @@
     </head>
     <body>
         <div id = "app">
-            <p v-show="toggle">
-                Hello
+            <p>
+                <input type="text" v-model="message">
             </p>
             <p>
-                {{count}}
+                <input type="text" v-model="message">
             </p>
-            <p>
-                {{user.prefecture}}
-            </p>
-            <p>
-                {{colors[1]}}
-            </p>
-            <ol>   
-                <li v-for = "color in colors">
-                {{color}}
-                </li>
-            </ol>
-            <ul>
-                <li v-for = "value in user">
-                    {{value}}
-                </li>
-            </ul>
-            <hr>
-            <ul>
-                <li v-for = "(value,key) in user">
-                    {{key}} : {{value}}
-                </li>
-            </ul>
-            <input type="text" v-bind:value="message">
-            <br><br>
-
-            <button v-on:click="onclick">
-                Click!
-            </button>
-            <p>
-                {{now}}
-            </p>
+            <pre>{{$data}}</pre>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
         <script src="js/main.js"></script>
