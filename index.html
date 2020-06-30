@@ -5,8 +5,18 @@
     </head>
     <body>
         <div id="app">
-            {{message}}
-           <p v-text = "message"></p>
+           <p >
+               {{message}}
+           </p>
+           <p>
+               {{number+1}}
+           </p>
+           <p>
+               {{message.split('').reverse().join('')}}
+           </p>
+           <p>
+               {{ok ? 'Yes' :'No' }}
+           </p>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
         <script src="js/main.js"></script>
