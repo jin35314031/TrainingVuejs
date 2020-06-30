@@ -6,12 +6,11 @@
     <body>
         <div id="app">
             <p>
-                {{ message.split('').reverse().join('')}}
+                base price: <input type="text" v-model="basePrice">
             </p>
-            <p>{{reversedMessage}}</p>
-            <p>{{reversedMessageMethod()}}</p>
-            
-           
+            <p>
+                tax included prive: <input type="text" v-model="taxIncludedPrice">
+            </p>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
         <script src="js/main.js"></script>
