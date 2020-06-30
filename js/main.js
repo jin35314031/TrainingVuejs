@@ -1,14 +1,19 @@
 var app = new Vue({
     el: '#app',
     data:{
-        message:'Hello World',
-        url:'https://jp.vuejs.org/',
-        toggle:true,
-        languages:['JavaScript','Ruby','Python']
+        newItem:'',
+        todos:[]
     },
     methods:{
-        clickHandler:function(){
-            this.message = 'Clicked!'
+        addItem:function(event){
+            //alert();
+            if(this.newItem == '')return;
+            var todo = {
+                item:this.newItem,
+                isDone:false
+            };
+            this.todos.push(todo);
+            this.newItem = '';
         }
     }
 })
