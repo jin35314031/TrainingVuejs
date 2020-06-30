@@ -7,5 +7,10 @@ var app = new Vue({
         reversedMessage:function(){
             return this.message.split('').reverse().join('')
         }
+    },
+    methods:{
+        reversedMessageMethod:function(){
+            return this.message.split('').reverse().join('')
+        }
     }
 })
