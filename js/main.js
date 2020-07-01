@@ -1,8 +1,8 @@
 var app = new Vue({
     el: '#app',
     data:{
-        isLarge:true,
-        hasError:false
+        largeClass:'large',
+        dangerClass:'text-danger'
     },
     methods:{
         
