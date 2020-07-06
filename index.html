@@ -5,12 +5,9 @@
     </head>
     <body>
         <div id="app">
-            <button v-on:click.once = "clickHandler">
-                Now
-            </button>
-            <p>
-               {{message}}
-            </p>
+            <!-- <input type="text" v-on:keyup.27="clear" v-model="message"> -->
+            <!-- <input type="text" v-on:keyup.esc="clear" v-model="message"> -->
+            <input type="text" v-on:keyup.esc.space.up="clear" v-model="message">
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
         <script src="js/main.js"></script>
