@@ -5,19 +5,15 @@
     </head>
     <body>
         <div id="app">
-           <input type="checkbox" id="checkbox" v-model="checked"> 
-           <label for="checkbox">{{checked}}</label>
-           <pre>{{ $data }}</pre>
-
-           <input type="checkbox" id = "red" value="Red" v-model="colors">
-           <label for="red">Red</label>
-           <input type="checkbox" id = "green" value="Green" v-model="colors">
-           <label for="green">Green</label>
-           <input type="checkbox" id = "blue" value="Blue" v-model="colors">
-           <label for="blue">Blue</label>
-           <p>
-               {{colors}}
-           </p>
+          <input type="radio" id = "red" value="Red" v-model= "color">
+          <label for="red">Red</label>
+          <input type="radio" id = "green" value="Green" v-model= "color">
+          <label for="green">Green</label>
+          <input type="radio" id = "blue" value="Blue" v-model= "color">
+          <label for="blue">Blue</label>
+          <p>
+              {{color}}
+          </p>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
         <script src="js/main.js"></script>
