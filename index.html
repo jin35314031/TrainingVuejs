@@ -16,9 +16,9 @@
         <script src="https://unpkg.com/vue-router@3.0.6"></script>
 
         <script>
-            const  B= { template: `
+            const  A= { template: `
                 <div>
-                    <h2>This is B.</h2>
+                    <h2>This is A.</h2>
                 </div>
                 `
             }
@@ -27,12 +27,8 @@
                 routes:[
                     {
                         path:'/a',
-                        redirect:{name:'page-b'}
-                    },  
-                    {
-                        name:'page-b',
-                        path:'/b',
-                        component :B
+                        component: A,
+                        alias: '/b'
                     }
                 ]
             })
